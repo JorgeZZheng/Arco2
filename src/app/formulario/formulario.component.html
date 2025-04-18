@@ -1,0 +1,31 @@
+<div class="form-container">
+    <h2>Formulario de Persona</h2>
+  
+    <form [formGroup]="formulario" (ngSubmit)="guardarPersona()">
+      <label>
+        Nombre:
+        <input type="text" formControlName="nombre" />
+      </label>
+  
+      <label>
+        Apellido:
+        <input type="text" formControlName="apellido" />
+      </label>
+  
+      <label>
+        Edad:
+        <input type="number" formControlName="edad" />
+      </label>
+  
+      <label>
+        Correo Electrónico:
+        <input type="email" formControlName="email" />
+      </label>
+  
+      <div class="buttons">
+        <button type="button" (click)="limpiarFormulario()">Limpiar</button>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+  
